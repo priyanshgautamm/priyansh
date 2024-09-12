@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    cursor: none;
+    overflow-x: hidden;
+}
+
+
+
+
+.navside{
+    position: absolute;
+    color: #dcd5bf;
+    font-family: "DM Sans";
+    right: 70px;
+    text-align: right;
+    top: 30px;
+    z-index: 100;
+    cursor: none;
+}
+
+
+.aboutNavTxt{
+    /* cursor: pointer; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blueTextColor{
+    color: #0d6a9b;
+}
+.homeBody{
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    /* top: 0; */
+    overflow: hidden;
+    /* background-color: pink; */
+}
+.homeBg{
+    width: 100%;
+    height: 100%;
+    /* background-color: #0d6a9b; */
+}
+.imgBoxMain{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgBoxMain img{
+    width: 100%;
+    height: 100%;
+}
+.MyImgBox{
+    width: 100%;
+    /* background-color: aquamarine; */
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+}
+.MyImgBox img{
+    width: 43%;
+    position: relative;
+    /* bottom: -200px; */
+    top: 200px;
+}
+.homeTextMainDiv{
+    position: absolute;
+    top: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 110px;
+    letter-spacing: -8px;
+    color: #dcd5bf;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: <weight>; */
+    /* font-style: normal; */
+}
+.firstBoxText{
+    width: 48%;
+    height: 60vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.secondBoxText{
+    /* background-color: aquamarine; */
+    width: 48%;
+    height: 60vh;
+}
+
+.logoNav{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    z-index: 10;
+}
+.logoNav img{
+    width: 60px;
+}
+.nameHome{
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: 'DM Sans';
+    color: #dcd5bf;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cursor{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: all 0.1s;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+#crsinside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "DM Sans";
+    font-weight: 700;
+    opacity: 0;
+    font-size: 13px;
+    letter-spacing: 5px;
+    transition: all 0s;
+    /* transition: all 0.2s; */
+}
+.cursordot{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    background-color: #fff;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: all 0s;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+.firstTxtB:hover .cursor{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#aboutPageMain{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 55px;
+    border-radius: 50%;
+    right: 130px;
+    /* opacity: 0; */
+    /* display: none; */
+    transition: all 0.2s;
+    /* z-index: 1000; */
+}
+.aboutPage{
+    width: 100%;
+    height: 100%;
+    background-color: #292928;
+    display: none;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+
+}
+.aboutBox{
+    width: 70%;
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    font-family: "DM Sans";
+    color: #dcd5bf;
+    transform: translate(0%,-50%);
+}
+.abtTitle{
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.abtDes{
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}

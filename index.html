@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Fonts Link  -->
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh Gautam</title>
+</head>
+<body>
+
+
+    <div class="logoNav" onmouseover="navLogoHoverCursor()" onmouseout="navLogoHoverCursorOut()">
+        <img src="logo.png" alt="">
+    </div>
+
+
+    <div class="navside">
+        <div class="aboutNavTxt">HOME</div>
+        <div class="aboutNavTxt" onclick="openAboutMain()">ABOUT</div>
+        <div class="aboutNavTxt">WORK</div>
+        <div class="aboutNavTxt">CONTACT</div>
+    </div>
+
+
+    <div class="homeBody">
+
+        <div class="nameHome">PRIYANSH GAUTAM</div>
+
+        <div class="homeBg">
+
+            <div class="imgBoxMain">
+
+                <img src="home bg.jpg" alt="">
+            
+                <div class="MyImgBox">
+                    <img src="myImg.png" alt="">
+                </div>
+            
+            
+            </div>
+        
+
+
+            <div class="homeTextMainDiv">
+                <div class="firstBoxText">
+                    <div class="firstTxtB" onmouseover="fillMouseOutline()" onmouseout="fillMouseOutlineOut()">
+                    <div>I AM</div>
+                    <div><span class="blueTextColor">LEARNING</span></div>
+                    </div>
+                </div>
+                <div class="secondBoxText">
+                    <div class="secondTxtB" onmouseover="fillMouseOutline()" onmouseout="fillMouseOutlineOut()">
+                    <div>I CAN</div>
+                    <div><span class="blueTextColor">CRAFT</span></div>
+                    <div><span class="blueTextColor">BEST</span> FOR</div>
+                    <div>U:)</div>
+                    <!-- <div class="cursorRightTxt"></div> -->
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+
+            <div id="aboutPageMain" onmouseover="aboutPageCrseActive()" onmouseout="aboutPageCrseUnactive()">
+                <div class="aboutPage" id="abtPage">
+                    <div class="aboutBox" onmouseover="fillMouseOutline()" onmouseout="fillMouseOutlineOut()">
+                        <div class="abtTitle">ABOUT ME</div>
+                        <div class="abtDes">
+                            I’m an <span class="blueTextColor">skilled student</span> in creative
+                            web designing and always eager
+                            to bring my growing expertise.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cursor" id="crsorOutlne"></div>
+    </div>
+    <div class="cursordot" id="crsorDot">
+        <div id="crsinside">
+            CLICK
+        </div>
+    </div>
+
+
+
+<script>
+
+    // Cursor for left Text on Home Page
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+    });
+
+    // cursor for right text on home page 
+
+
+    const cursorDoot = document.querySelector('.cursordot');
+    document.addEventListener('mousemove', (e) => {
+        cursorDoot.style.left = e.pageX + 'px';
+        cursorDoot.style.top = e.pageY + 'px';
+    })
+</script>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
