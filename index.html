@@ -30,8 +30,22 @@
     </div>
 
 
+    <!-- <div class="socialLinks"> -->
+        <div style="z-index: 10000;" class="instagram" onmouseover="instaMouseHover()" onmouseout="instaMouseOut()">
+            <a href="https://www.instagram.com/priyanshgautamm/" target="_blank">
+            <img src="instagram.png" alt="">
+            </a>
+        </div>
+    <!-- </div> -->
+
+
+
+
+
+
+
     <div class="navside">
-        <div class="aboutNavTxt">HOME</div>
+        <div class="aboutNavTxt" onclick="openHomeMain()">HOME</div>
         <div class="aboutNavTxt" onclick="openAboutMain()">ABOUT</div>
         <div class="aboutNavTxt">WORK</div>
         <div class="aboutNavTxt">CONTACT</div>
@@ -81,7 +95,7 @@
 
             <div id="aboutPageMain" onmouseover="aboutPageCrseActive()" onmouseout="aboutPageCrseUnactive()">
                 <div class="aboutPage" id="abtPage">
-                    <div class="aboutBox" onmouseover="fillMouseOutline()" onmouseout="fillMouseOutlineOut()">
+                    <div class="aboutBox"  id="abtDescri" onmouseover="fillMouseOutline()" onmouseout="fillMouseOutlineOut()">
                         <div class="abtTitle">ABOUT ME</div>
                         <div class="abtDes">
                             I’m an <span class="blueTextColor">skilled student</span> in creative
@@ -136,7 +150,11 @@
 
 
 
-    <div class="cursor" id="crsorOutlne"></div>
+    <div class="cursor" id="crsorOutlne">
+        <div id="instacrsr" style="color: #fff; font-family: 'DM Sans'; height: 100%;
+        display: flex; align-items: center; justify-content: flex-start; padding-left: 130px;  font-size: 14px; letter-spacing: 3px; opacity: 0; transition: all 0.4s;">
+        INSTAGRAM/PRIYANSHGAUTAMM</div>
+    </div>
     </div>
     <div class="cursordot" id="crsorDot">
         <div id="crsinside">
@@ -162,7 +180,7 @@
     document.addEventListener('mousemove', (e) => {
         cursorDoot.style.left = e.pageX + 'px';
         cursorDoot.style.top = e.pageY + 'px';
-    })
+    });
 </script>
 
 
