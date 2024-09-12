@@ -5,7 +5,7 @@
 
 body{
     cursor: none;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -139,6 +139,19 @@ body{
     z-index: 5;
 }
 
+.instagram{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    /* background-color: aqua; */
+}
+.instagram img{
+    width: 35px;
+    height: 35px;
+}
+
 
 
 
@@ -176,7 +189,7 @@ body{
     width: 60px;
     height: 60px;
     border: 2px solid #fff;
-    border-radius: 50%;
+    border-radius: 400px;
     /* background-color: #fff; */
     pointer-events: none;
     transform: translate(-50%,-50%);
@@ -269,11 +282,15 @@ body{
     /* z-index: 1000; */
 }
 .aboutPage{
-    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
     height: 100%;
     background-color: #292928;
     display: none;
-    opacity: 0;
+    display: block;
+    /* opacity: 0; */
     transition: all 0.2s;
     transition-delay: 0.4s;
 
@@ -282,10 +299,13 @@ body{
     width: 70%;
     position: absolute;
     top: 48%;
+    opacity: 0;
     left: 15%;
     font-family: "DM Sans";
     color: #dcd5bf;
     transform: translate(0%,-50%);
+    transition: all 0.3s;
+    transition-delay: 0.7s;
 }
 .abtTitle{
     letter-spacing: 10px;
