@@ -48,6 +48,9 @@ function navLogoHoverCursorOut(){
 
 var aboutBox = document.getElementById("aboutPageMain");
 var abtPagee = document.getElementById("abtPage");
+var abtDe = document.getElementById("abtDescri");
+
+
 
 function openAboutMain(){
     // aboutBox.style.display = "flex";
@@ -60,5 +63,39 @@ function openAboutMain(){
     abtPagee.style.transitionDelay = "0.4s";
     // abtPagee.style.display = "block";
     abtPagee.style.opacity = "1";
+    abtPagee.style.display = "block";
+    abtPagee.style.width = "100%";
+    abtDe.style.opacity = "1";
 
+}
+
+function openHomeMain(){
+    aboutBox.style.top = "55px";
+    aboutBox.style.right = "130px";
+    aboutBox.style.width = "10px";
+    aboutBox.style.height = "10px";
+    aboutBox.style.borderRadius = "50%";
+    abtPagee.style.transitionDelay = "0s";
+    // abtPagee.style.display = "block";
+    abtPagee.style.opacity = "0";
+    abtPagee.style.display = "none";
+    abtPagee.style.width = "0%";
+    abtDe.style.opacity = "0";
+}
+
+
+var insCrsr = document.getElementById("instacrsr");
+
+function instaMouseHover(){
+    insCrsr.style.opacity = "1";
+    cursorOutline.style.width = "100px";
+    cursorOutline.style.height = "100px";
+    crsrin.style.opacity = "1";
+}
+
+function instaMouseOut(){
+    insCrsr.style.opacity = "0";
+    cursorOutline.style.width = "60px";
+    cursorOutline.style.height = "60px";
+    crsrin.style.opacity = "0";
 }
